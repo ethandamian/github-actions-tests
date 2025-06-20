@@ -1,4 +1,5 @@
 name: Say hi on push or on pull request
+run-name: ${{ github.event_name }} is trigging the workflow
 on:
   pull_request:
     types: [opened]
