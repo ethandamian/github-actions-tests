@@ -1,0 +1,13 @@
+name: Say hi on push or on pull request
+on:
+  pull_request:
+    types: [opened]
+    branches:
+      - main
+  issues:
+    types: [opened]
+jobs:
+  say-hi:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hi people, I am learning github actions!"
