@@ -1,0 +1,15 @@
+name: Run when commit contains "hotfix"
+on: 
+  pull_request:
+    types: [opened, labeled]
+
+jobs:
+  normal-echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Normal run"
+
+  if-statement:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ github.event }}
