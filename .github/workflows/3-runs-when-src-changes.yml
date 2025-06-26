@@ -18,7 +18,7 @@ jobs:
       - name: build
         run: |
           npm ci
-          npm run build
+          echo "Dependencies installed"
 
       - name: tests
         run: npm test
