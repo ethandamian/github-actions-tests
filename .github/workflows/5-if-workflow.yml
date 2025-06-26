@@ -10,7 +10,7 @@ jobs:
       - run: echo "Normal run"
 
   if-statement:
-    if: contains(${{ github.event.pull_request.title }} == "Hotfix")
+    if: contains(github.event.pull_request.title, "Hotfix")
     runs-on: ubuntu-latest
     steps:
       - run: echo "if statement runs!"
