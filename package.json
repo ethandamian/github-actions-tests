@@ -1,0 +1,23 @@
+{
+  "name": "github-actions-tests",
+  "version": "1.0.0",
+  "description": "This is a README",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"All test passed 10/10 Good Job!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethandamian/github-actions-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ethandamian/github-actions-tests/issues"
+  },
+  "homepage": "https://github.com/ethandamian/github-actions-tests#readme",
+  "dependencies": {
+    "loadash": "^1.0.0"
+  }
+}
