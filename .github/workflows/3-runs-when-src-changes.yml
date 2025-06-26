@@ -1,0 +1,26 @@
+name: Runs on src/ change
+run-name: Running in ${{ github.repository }} by @${{github.repository_owner }}
+
+on: 
+  pull_request_target:
+    paths: src/**
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          
+      - name: build
+        run: |
+          npm ci
+          npm run build
+
+      - name: tests
+        run: npm test
+  
+  
