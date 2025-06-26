@@ -1,4 +1,5 @@
 name: Print message on push
+run-name: ${{ github.event_name }} runned by @${{ github.author }}
 on: push
 
 jobs:
